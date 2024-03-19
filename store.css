@@ -1,7 +1,75 @@
-.item img{
-  height: 200px;
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
 }
-
+footer{
+  background-color: red;
+  text-align: center;
+}
 footer img{
   height: 30px;
+  margin: 20px
+}
+nav{
+  color: white;
+  background-color: red;
+  font-size: 1.7em;
+  letter-spacing: 0.04em;
+  padding: 1em 1em 0.5em;
+  margin: 0;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0;
+  padding-right: 5px;
+  border-right: solid 1px white
+}
+
+nav li a{
+  text-decoration: none;
+  padding: 0.3em 0.6em;
+  color: white;
+}
+
+nav li a:hover{
+  color: red;
+  background-color: white;
+}
+h2.sectionHeader{
+  text-align: center;
+  font-size: 2em;
+  text-decoration: underline;
+}
+h2 a{
+  border-radius: 15px;
+  background-color: lightgray;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.container{
+  display: table;
+  border: solid 1px white;
+}
+.item{
+  display: table-cell;
+  width: 500px;
+  text-align: center;
+}
+.item img{
+  height: 400px;
+}
+#main{
+  width: 90%;
+  margin: auto;
 }
