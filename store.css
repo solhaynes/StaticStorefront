@@ -1,16 +1,26 @@
 body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  color: white;
+  color: black;
+}
+h1{
+  font-size: 3em;
+  text-align: center;
+}
+p{
+  font-size: 1.5em;
+  text-align: center;
 }
 footer{
   background-color: red;
   text-align: center;
 }
+footer p{
+  padding-top: 20px;
+}
 footer img{
   height: 30px;
-  margin: 20px
+  margin: 0px 20px 20px 20px;
 }
 nav{
   color: white;
@@ -19,6 +29,7 @@ nav{
   letter-spacing: 0.04em;
   padding: 1em 1em 0.5em;
   margin: 0;
+  text-align: center;
 }
 nav ul{
   margin: 0;
@@ -30,13 +41,18 @@ nav li{
   display: inline-block;
   margin: 0;
   padding-right: 5px;
-  border-right: solid 1px white
+  border-right: solid 1px white;
+}
+
+nav li:last-child{
+  border-right: none;
 }
 
 nav li a{
   text-decoration: none;
   padding: 0.3em 0.6em;
   color: white;
+  transition: 0.2s;
 }
 
 nav li a:hover{
@@ -46,28 +62,38 @@ nav li a:hover{
 h2.sectionHeader{
   text-align: center;
   font-size: 2em;
-  text-decoration: underline;
+  border-bottom: solid 2px black;
 }
-h2 a{
+a.seeMore{
+  display: block;
+  width: max-content;
   border-radius: 15px;
   background-color: lightgray;
   padding: 10px;
   text-decoration: none;
   color: black;
   text-align: center;
+  margin: auto;
+  transition: 0.2s;
 }
-
+a.seeMore:hover{
+  background-color: rgb(166, 165, 165);
+}
 .container{
   display: table;
-  border: solid 1px white;
 }
 .item{
   display: table-cell;
   width: 500px;
   text-align: center;
 }
-.item img{
+.item  a img{
   height: 400px;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+.item a img:hover{
+  transform: scale(1.1);
 }
 #main{
   width: 90%;
